@@ -2,6 +2,7 @@ import { searchByTeam } from "./data.js";
 import { searchBySport } from "./data.js";
 import { searchByGender } from "./data.js";
 import { searchByMedal } from "./data.js";
+
 console.log(searchByTeam);
 //import athletes from './data/athletes/athletes.js';
 //import data from './data/athletes/athletes.js';
