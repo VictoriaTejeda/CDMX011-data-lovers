@@ -5,7 +5,6 @@ body {
   background-color: #FBF8E1;
   margin: 0;
   box-sizing: border-box;
-  min-height: 100vh;
 }
 
 .description{
@@ -39,17 +38,20 @@ h1 {
   font-family:'Baloo Chettan 2', cursive;
   font-size: 30px;
 }
+
 .collage{
   display: flex;
   justify-content: center;
   justify-items: center;
 }
+
 .welcome{
   margin-top: 0px;
   margin: 0;
   height: auto;
   width:90%;
 }
+
 .info{
 
   font-family:'Baloo Chettan 2', cursive;
@@ -222,9 +224,9 @@ select:hover{
 .circular_landscape img{
   width: 140px;
   height: 140px;
-  padding: 0px 40px 10px;
-
+  padding: 0px 40px 10px; /** Why? **/
 }
+
 .name_athlet{
   font-family: 'Pathway Gothic One', sans-serif;
   font-weight: bold;
