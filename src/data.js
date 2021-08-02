@@ -1,11 +1,18 @@
 // estas funciones son de ejemplo
 //import athletes from "./data/athletes/athletes.js";
-import data from "./data/athletes/athletes.js";
+import data from "./data/athletes/athletes.js";//obtiene los datos d ela base de datos original  
 
-export const name = data.athletes.sort((a, b) => {
+
+export function sortByAtoZ(data){
+  let aToZ= data.sort((a, b) => {
+    return a.name < b.name ? -1 : 1;
+})
+return aToZ;
+}
+/*xport const name = data.athletes.sort((a, b) => {
   return a.name < b.name ? -1 : 1;
 });
-//console.log(name);
+//console.log(name);*/
 
 export function searchByTeam(dataX, pais, buscarTodo) {
   let filterPerTeam;

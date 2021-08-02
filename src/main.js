@@ -1,8 +1,9 @@
-import { searchByTeam } from "./data.js";
+import { searchByTeam, sortByAtoZ } from "./data.js";
 import { searchBySport } from "./data.js";
 import { searchByGender } from "./data.js";
 import { searchByMedal } from "./data.js";
-console.log(searchByTeam);
+
+//console.log(searchByTeam);
 //import athletes from './data/athletes/athletes.js';
 //import data from './data/athletes/athletes.js';
 
@@ -20,31 +21,34 @@ let selectMedal = document.getElementById("medallas");
 let pagination = document.getElementById("pagination");
 let avatar = 12;
 let currentPage = 1;
-//console.log("firstpage" + firstPage);
+
 hideFpageBtn(false);
 
 document.querySelector(".button").addEventListener("click", reset);
 
-selectPais.addEventListener("change", function () {
+function listenerFn() {
   filtrar();
   hideFpageBtn(true);
+}
+
+selectPais.addEventListener("change", function () {
+  
+  listenerFn();
 });
 
 selectSport.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true); 
-  
+ 
+  listenerFn();
 });
 
-selectGender.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true);
-});
+selectGender.addEventListener("change",function () {
+
+  listenerFn();
+}); 
 
 selectMedal.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true);
-
+ 
+  listenerFn();
 });
 
 function filtrar() {
@@ -98,6 +102,7 @@ function filtrar() {
   imgNoResult.hidden = !items.length == 0;
   //console.log(items);
   if(items.length > 0){
+    items = sortByAtoZ(items);
     setupPagination(items, pagination, avatar);
     DisplayList(items, divAthletes, avatar, currentPage);
   }
