@@ -1,4 +1,4 @@
-import {sortByAtoZ, searchByTeam, searchBySport} from "../src/data.js";
+import {sortByAtoZ, searchByTeam, searchBySport, searchByGender, searchByMedal} from "../src/data.js";
 //import data from "./data/athletes/athletes.js";
 //import athletes from "../src/data/athletes/athletes.js";
 //import athletes from "../src/data/athletes/athletes.js";
@@ -11,15 +11,12 @@ describe('Deberia ser una función', () => {
   it('es una función', () => {
     expect(typeof sortByAtoZ).toBe('function');
   });
-
   it('Deberia estar en orden alfabético A-Z', () => {
     const result= sortByAtoZ(dataX["athletes"]);
     console.log("esto traigo " + result);
     expect(result).toEqual(testSort);
-
   });
 });
-
 describe('deberia ser una función', () => {
   it('es una función', () => {
     expect(typeof searchByTeam).toBe('function');
@@ -54,4 +51,41 @@ describe('deberia ser una función', () => {
     expect(result.length).toBe(32);
   });
 });
+
+describe('deberia ser una función', () => {
+  it('es una función', () => {
+    expect(typeof searchByGender).toBe('function');
+  });
+
+  it('deberia filtrar por genero considerando previos datos', () => {
+    const result = searchByGender(dataX["athletes"], "Femenino",false);
+    console.log("tamaño de filtrado por genero es: "+result.length);
+    expect(result.length).toBe(1);
+  });
+
+  it('deberia filtrar por genero tomando en cuenta la informacion completa', () => {
+    const result = searchByGender(null, "Femenino",true);
+    console.log("tamaño de filtrado por genero es: "+result.length);
+    expect(result.length).toBe(969);
+  });
+});
+
+describe('deberia ser una función', () => {
+  it('es una función', () => {
+    expect(typeof searchByMedal).toBe('function');
+  });
+
+  it('deberia filtrar por medalla considerando previos datos', () => {
+    const result = searchByMedal(dataX["athletes"], "Silver",false);
+    console.log("tamaño de filtrado por medalla es: "+result.length);
+    expect(result.length).toBe(3);
+  });
+
+  it('deberia filtrar por genero tomando en cuenta la informacion completa', () => {
+    const result = searchByMedal(null, "Silver",true);
+    console.log("tamaño de filtrado por medalla es: "+result.length);
+    expect(result.length).toBe(655);
+  });
+});
+
 //searchBySport, searchByGender, searchByMedal*/
