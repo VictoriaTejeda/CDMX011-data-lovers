@@ -25,27 +25,18 @@ hideFpageBtn(false);
 
 document.querySelector(".button").addEventListener("click", reset);
 
-selectPais.addEventListener("change", function () {
+function listenerFn() {
   filtrar();
   hideFpageBtn(true);
-});
+}
 
-selectSport.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true); 
-  
-});
+selectPais.addEventListener("change", listenerFn);
 
-selectGender.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true);
-});
+selectSport.addEventListener("change", listenerFn);
 
-selectMedal.addEventListener("change", function () {
-  filtrar();
-  hideFpageBtn(true);
+selectGender.addEventListener("change",listenerFn);
 
-});
+selectMedal.addEventListener("change", listenerFn);
 
 function filtrar() {
   let items = []; //determinamos el array vacio para que lo ocupe dataX cuando se hace una busqueda previa
