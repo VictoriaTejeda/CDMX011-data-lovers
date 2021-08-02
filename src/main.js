@@ -3,7 +3,7 @@ import { searchBySport } from "./data.js";
 import { searchByGender } from "./data.js";
 import { searchByMedal } from "./data.js";
 
-console.log(searchByTeam);
+//console.log(searchByTeam);
 //import athletes from './data/athletes/athletes.js';
 //import data from './data/athletes/athletes.js';
 
@@ -21,7 +21,7 @@ let selectMedal = document.getElementById("medallas");
 let pagination = document.getElementById("pagination");
 let avatar = 12;
 let currentPage = 1;
-//console.log("firstpage" + firstPage);
+
 hideFpageBtn(false);
 
 document.querySelector(".button").addEventListener("click", reset);
