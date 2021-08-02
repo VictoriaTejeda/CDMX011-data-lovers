@@ -1,4 +1,4 @@
-import { searchByTeam } from "./data.js";
+import { searchByTeam, sortByAtoZ } from "./data.js";
 import { searchBySport } from "./data.js";
 import { searchByGender } from "./data.js";
 import { searchByMedal } from "./data.js";
@@ -31,13 +31,25 @@ function listenerFn() {
   hideFpageBtn(true);
 }
 
-selectPais.addEventListener("change", listenerFn);
+selectPais.addEventListener("change", function () {
+  
+  listenerFn();
+});
 
-selectSport.addEventListener("change", listenerFn);
+selectSport.addEventListener("change", function () {
+ 
+  listenerFn();
+});
 
-selectGender.addEventListener("change",listenerFn);
+selectGender.addEventListener("change",function () {
 
-selectMedal.addEventListener("change", listenerFn);
+  listenerFn();
+}); 
+
+selectMedal.addEventListener("change", function () {
+ 
+  listenerFn();
+});
 
 function filtrar() {
   let items = []; //determinamos el array vacio para que lo ocupe dataX cuando se hace una busqueda previa
@@ -90,6 +102,7 @@ function filtrar() {
   imgNoResult.hidden = !items.length == 0;
   //console.log(items);
   if(items.length > 0){
+    items = sortByAtoZ(items);
     setupPagination(items, pagination, avatar);
     DisplayList(items, divAthletes, avatar, currentPage);
   }

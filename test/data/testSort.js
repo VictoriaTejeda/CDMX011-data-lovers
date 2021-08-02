@@ -1,9 +1,4 @@
-export default {
-    "games": "Olympic Games",
-    "year": 2016,
-    "season": "summer",
-    "city": "Rio de Janeiro",
-    "athletes": [
+export default [
     {
       "name": "Ahmad Abughaush",
       "gender": "Masculino",
@@ -125,4 +120,3 @@ export default {
       "medal": "Bronze"
     }
 ]
-}
