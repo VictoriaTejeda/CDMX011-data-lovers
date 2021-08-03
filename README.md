@@ -3,7 +3,7 @@
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Historias de usuario.(# 2-Historias de usuario.)
+* [2. Historias de usuario](# 2-Historias de usuario.)
 * 
 
 ***
@@ -41,7 +41,7 @@ Para saber que atletas representarón a dicho pais en los JO-Río 2016.
 ![prototipo de alta fidelidad](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/prototipo%20figma%201.1.png)
 
 
-**feed back obtenido
+**feed back obtenido**
 
 Colocar la barra de select en la parte de arriba, utilizar otra gama de colores mas acorde al tema ese figma no lo tenemos pero recibimos asesoria por parte del coach, modificar el  background del footer y quitar las redes sociales ya que el footer no te debe sacar de tu página al menos que sean de tu empresa.
 
@@ -66,7 +66,7 @@ Definición de terminado:
 - Realizar pruebas con 3 usuarios e incluir el feedback.
 - Tener un diseño responsive.
 
-**feed back obtenido
+**feed back obtenido**
 
 En cuanto al prototipo de baja fidelidad se recibio el feed back por parte de compañeras y otros usuarios de mostrar la informacion en tarjetas testeo de usabilidad.
 
