@@ -9,7 +9,7 @@ const firstPage = document.querySelector(".reseña");
 let ocultarPaginacion = document.querySelector("#hidePagination");
 let imgNoResult = document.getElementById("root");
 let pagination = document.getElementById("pagination");
-let avatar = 12;
+let avatar = 10;
 let currentPage = 1;
 document.querySelector(".button").addEventListener("click", reset);
 

@@ -4,12 +4,13 @@ import {sortByAtoZ, searchByTeam, searchBySport, searchByGender, searchByMedal} 
 //import athletes from "../src/data/athletes/athletes.js";
 import dataX from "./data/dataX.js";
 import testSort from "./data/testSort.js";
-import athletes from "../src/data/athletes/athletes.js";
+
+//import athletes from "../src/data/athletes/athletes.js";
 
 
 
 describe('data::sortByAtoZ', () => {
-  it('es una función', () => {
+  test('es una función', () => {
     expect(typeof sortByAtoZ).toBe('function');
   });
   it('Deberia estar en orden alfabético A-Z', () => {
@@ -30,9 +31,9 @@ describe('data::searchByTeam', () => {
   });
 
   it('deberia filtrar por pais tomando en cuenta la informacion completa', () => {
-    const result = searchByTeam(athletes, "Russia",true);
-    //console.log("tamano de filtrado por pais es: "+result.length);
-    expect(result.length).toBe(115);
+    const resultadito = searchByTeam(testSort, "Russia",true, testSort);
+    //console.log(resultadito.length)
+    expect(resultadito.length).toBe(3);
   });
 });
 describe('data::searchBySport', () => {
@@ -47,9 +48,9 @@ describe('data::searchBySport', () => {
   });
 
   it('deberia filtrar por deporte tomando en cuenta la informacion completa', () => {
-    const result = searchBySport(athletes, "Taekwondo",true);
+    const result = searchBySport(testSort, "Taekwondo",true, testSort);
     //console.log("tamano de filtrado por deporte es: "+result.length);
-    expect(result.length).toBe(32);
+    expect(result.length).toBe(2);
   });
 });
 
@@ -65,9 +66,9 @@ describe('data::searchByGender', () => {
   });
 
   it('deberia filtrar por genero tomando en cuenta la informacion completa', () => {
-    const result = searchByGender(athletes, "Femenino",true);
+    const result = searchByGender(testSort, "Femenino",true, testSort);
     //console.log("tamaño de filtrado por genero es: "+result.length);
-    expect(result.length).toBe(969);
+    expect(result.length).toBe(1);
   });
 });
 
@@ -83,9 +84,9 @@ describe('data::searchByMedal', () => {
   });
 
   it('deberia filtrar por genero tomando en cuenta la informacion completa', () => {
-    const result = searchByMedal(athletes, "Silver",true);
+    const result = searchByMedal(testSort, "Silver", true, testSort);
     //console.log("tamaño de filtrado por medalla es: "+result.length);
-    expect(result.length).toBe(655);
+    expect(result.length).toBe(3);
   });
 });
 

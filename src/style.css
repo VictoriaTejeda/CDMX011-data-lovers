@@ -59,7 +59,7 @@ body {
 }
 
 .page_name {
-  margin-top: 85px;
+  margin-top: 25px;
 }
 .page_name {
   display: flex;
@@ -113,7 +113,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  background-image: url(images/menu.png);
+  background-color: #FFDE27/* url(images/menu.png)*/;
   margin-top: 30px;
 }
 .menu select {
@@ -124,7 +124,7 @@ h1 {
   font-size: 20px;
   margin: 25px;
   align-content: center;
-  background: transparent;
+  background-color: #EFA21F;
   border-radius: 8px;
 }
 option:checked {
@@ -144,7 +144,17 @@ select:hover {
   margin: 20px;
   align-content: center;
   border-radius: 8px;
-  background-color: rgba(248, 112, 0, 0.459);
+  background-color: #3F9CB1;
+  
+}
+.button:hover {
+  background-color: #39B5AF;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.button:active {
+  background-color: #39B5AF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #pagination {
   display: flex;
@@ -248,18 +258,23 @@ select:hover {
 
 .dato {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 0px;
   font-family: "Baloo Chettan 2", cursive;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .circular_landscape {
-  height: 144.44px;
-  width: 144.44px;
+  display: flex;
+  height: 154.44px;
+  width: 154.44px;
+  margin: -30px;
 }
 
 .circular_landscape img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
+  margin-left: -13px;
 }
 .name_athlet {
   font-family: "Pathway Gothic One", sans-serif;
@@ -268,20 +283,34 @@ select:hover {
   font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 3px;
-  margin-top: -10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 .team_athlet {
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 23px;
+  font-weight:500;
   border: rgb(12, 12, 12);
-  margin: 8px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.sport{
+
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 20px;
+  margin-bottom: -15px;
+  margin-top: 15px;
+
 }
 .circularMedal {
-  margin-top: -10px;
+  display: flex;
+  align-self:flex-end;
+  align-content: flex-start;
+  margin-top: -25px;
+  margin-right: 28px;
   width: 75px;
   height: 85px;
-  padding: 10px;
+  
 }
 .circularMedal img {
   width: 70px;
@@ -344,6 +373,7 @@ footer {
   width: 100%;
   height: 51px;
   margin-top: auto;
+  padding-top: 20px;
 }
 .footer p {
   text-align: center;
