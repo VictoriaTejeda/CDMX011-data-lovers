@@ -2,63 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #FBF8E1;
+  background-color: #fbf8e1;
   margin: 0;
   box-sizing: border-box;
-}
-
-.description{
-  margin-top: 10px;
-}
-
-h1 {
-  color: black;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 70px;
-  text-align-last: center;
-}
-.page_name{
-  margin-top: 85px;
-}
-.page_name{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-}
-.logo {
-  width:150px;
-  height: 150px;
-  padding: 0px;
-}
-
-.intro{
-  text-align: center;
-  font-family:'Baloo Chettan 2', cursive;
-  font-size: 30px;
-}
-
-.collage{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-.welcome{
-  margin-top: 0px;
-  margin: 0;
-  height: auto;
-  width:90%;
-}
-
-.info{
-
-  font-family:'Baloo Chettan 2', cursive;
-  font-size:25px;
-  text-align: center;
-  height: auto;
-  margin: 15px;
+  min-height: 100vh;
 }
 .nav_main {
   width: 100%;
@@ -71,15 +18,14 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 18px;
   background-image: url(images/HEADER.webp);
   color: #dbd3d3;
-  position: fixed;
   width: 100%;
-  height:60px;
+  height: 60px;
   top: 0;
-  left:0;
+  left: 0;
 }
 
 .nav_header a {
@@ -111,37 +57,88 @@ h1 {
   background-color: #f2f3f2ce;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-.menu{
+
+.page_name {
+  margin-top: 85px;
+}
+.page_name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+}
+h1 {
+  color: black;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 70px;
+  text-align-last: center;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.intro {
+  text-align: center;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 30px;
+}
+.collage {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.welcome {
+  margin-top: 0px;
+  margin: 0;
+  height: auto;
+  width: 90%;
+}
+.info {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 25px;
+  text-align: center;
+  height: auto;
+  margin: 15px;
+}
+
+.menu {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  background-image:url(images/menu.png); 
+  background-image: url(images/menu.png);
   margin-top: 30px;
 }
-.menu select{
+.menu select {
   padding-left: 10px;
   height: auto;
   width: 90%;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   font-size: 20px;
-  margin:25px;
+  margin: 25px;
   align-content: center;
   background: transparent;
   border-radius: 8px;
 }
-option:checked{
- background-color: rgb(233, 145, 45);
+option:checked {
+  background-color: rgb(233, 145, 45);
 }
 
-select:hover{
+select:hover {
   background-color: rgba(245, 231, 209, 0.432);
   box-shadow: 0px 10px 13px -7px #1b1917, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-.button{
+.button {
   height: auto;
   width: 100%;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   font-size: 20px;
   margin-top: 30px;
   margin: 20px;
@@ -149,7 +146,7 @@ select:hover{
   border-radius: 8px;
   background-color: rgba(248, 112, 0, 0.459);
 }
-#pagination{
+#pagination {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -160,7 +157,7 @@ select:hover{
   width: 100%;
 }
 
-.botoncito button{
+.botoncito button {
   width: 50px;
   height: 25px;
 
@@ -169,131 +166,171 @@ select:hover{
   outline: none;
   cursor: pointer;
 
-  background-color: #39B5AF;
+  background-color: #39b5af;
   border-radius: 8px;
   margin: 5px;
   transition: 0.4s;
-  color:black;
+  color: black;
   font-size: 15px;
   box-shadow: 0.5px 2px #888888;
-  
 }
 
- .botoncito button.active{
-   background-color: #EF6B24;
-   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
- }
+.botoncito button.active {
+  background-color: #ef6b24;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
 
- .botoncito button:hover {
+.botoncito button:hover {
   background-color: #8de4df;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
- }
+}
 
- 
 .allCards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly
 }
 
-.collection {
+.collection ,.atras {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 520px; 
+  padding: 10px;
+  margin: 20px;
+  border-radius: 7px;
+  background-image: url(images/fondoCard.png);
+  background-size: 100% 100%;
+  border: 10px solid rgba(255, 255, 255, 0.89);
+  box-sizing: border-box;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.collection, .atras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.tarjeta {
+  background-color: transparent;
   width: 300px;
   height: 520px;
-  padding: 30px;
-  margin: 20px;
-  align-content: center;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 30px;
-  background-image: url(images/fondoCard.png);
-  background-size: 100% 100% ;
-  border: 10px solid rgba(255, 255, 255, 0.89);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: -3;
-  box-shadow: 0px 15px 18px -5px #000000, 10px 20px 20px 10px rgba(0, 0, 0, 0);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.dato{
+/* This container is needed to position the front and back side */
+.tarjeta-inner {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  text-align: center;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.tarjeta:hover .tarjeta-inner {
+  transform: rotateY(180deg);
+}
+
+.atras{
+  transform: rotateY(180deg);
+}
+
+.dato {
+  text-align: center;
   font-size: 16px;
   padding-bottom: 0px;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
 }
-.circular_landscape img{
-  width: 140px;
-  height: 140px;
-  padding: 0px 40px 10px; /** Why? **/
+.circular_landscape {
+  height: 144.44px;
+  width: 144.44px;
 }
 
-.name_athlet{
-  font-family: 'Pathway Gothic One', sans-serif;
+.circular_landscape img {
+  width: 140px;
+  height: 140px;
+}
+.name_athlet {
+  font-family: "Pathway Gothic One", sans-serif;
   font-weight: bold;
   font-stretch: semi-expanded;
   font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 3px;
+  margin-top: -10px;
 }
-.team_athlet{
-  font-family:'Pathway Gothic One', sans-serif;
+.team_athlet {
+  font-family: "Pathway Gothic One", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  border:rgb(12, 12, 12);
-  float:right;
+  border: rgb(12, 12, 12);
   margin: 8px;
+}
+.circularMedal {
+  margin-top: -10px;
+  width: 75px;
+  height: 85px;
+  padding: 10px;
+}
+.circularMedal img {
+  width: 70px;
+  height: 80px;
+  float: right;
+}
 
-}
-.medall{
-  font-family:'Pathway Gothic One', sans-serif;
-  font-size: 20px;
-  margin: 8px;
-  font-weight:600;
-  padding-bottom: 3px;
-}
-p{
+#root p {
   font-size: 40px;
   text-align: center;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   margin-top: 20px;
 }
-.sin_resultados{
+.sin_resultados {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sin_resultado{
+.sin_resultado {
   height: auto;
   width: 30%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 360px) and (max-width: 1131px) { 
-  .menu select{
-     font-size: 10px;
-  }
-  .button{
+@media screen and (min-width: 360px) and (max-width: 1131px) {
+  .menu select {
     font-size: 10px;
-   }
+  }
+  .button {
+    font-size: 10px;
+  }
   h1 {
     font-size: 30px;
-   }
+  }
   .logo {
-    width:75px;
+    width: 75px;
     height: 75px;
   }
   .nav_header {
     font-size: 11px;
-
   }
-  .intro{
+  .intro {
     font-size: 15px;
   }
-  .info{
+  .info {
     font-size: 12px;
   }
-  .menu select{
-    margin:5px;
+  .menu select {
+    margin: 5px;
     margin-top: 30px;
   }
 
@@ -302,17 +339,14 @@ p{
   }
 }
 
-
-
 footer {
-  background-image: url(images/menu.png); 
+  background-image: url(images/menu.png);
   width: 100%;
   height: 51px;
   margin-top: auto;
 }
 .footer p {
-text-align: center;
-font-family: 'Julius Sans One', sans-serif;
-font-size: 15px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 15px;
 }
-
