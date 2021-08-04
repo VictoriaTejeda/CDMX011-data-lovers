@@ -40,7 +40,7 @@ function filtrar() {
   pagination.innerHTML = "";
   let opcionesSeccionadas = [];
 
-  if (pais != "Selecciona un pais") {
+  if (pais != "Selecciona un país") {
     opcionesSeccionadas.push("pais");
     if (opcionesSeccionadas.length == 1) {
       items = searchByTeam(items, pais, true);
@@ -49,7 +49,7 @@ function filtrar() {
     //console.log(items);
   }
 
-  if (deporte != "Selecciona una Disciplina") {
+  if (deporte != "Selecciona una disciplina") {
     opcionesSeccionadas.push("disciplina");
     if (opcionesSeccionadas.length == 1) {
       items = searchBySport(items, deporte, true);
@@ -157,15 +157,13 @@ function obtenerElementoAtleta(atleta) {
   aNameBack.innerHTML = atleta.name;
   aNameBack.classList.add("nameBack");
   const aSport = document.createElement("p");
-  aSport.innerHTML = "Deporte: " + atleta.sport;
   aSport.classList.add("sport");
   const aTeam = document.createElement("p");
-  aTeam.innerHTML = "Pais: " + atleta.team + " (" + atleta.noc + ")";
   aTeam.classList.add("team_athlet");
   
   div.appendChild(aName);
-  div.appendChild(aTeam);
-  div.appendChild(aSport);
+  div.appendChild(getFormatStrong("País: ", atleta.team + " (" + atleta.noc + ")"));
+  div.appendChild(getFormatStrong("Deporte: ", atleta.sport));
    
   const divAtras = document.createElement("div");
   divAtras.classList.add("atras");
@@ -181,8 +179,8 @@ function obtenerElementoAtleta(atleta) {
   return divTarjeta;
 }
 function reset() {
-  selectPais.value = "Selecciona un pais";
-  selectSport.value = "Selecciona una Disciplina";
+  selectPais.value = "Selecciona un país";
+  selectSport.value = "Selecciona una disciplina";
   selectGender.value = "Selecciona el género";
   selectMedal.value = "Selecciona una medalla";
   divAthletes.innerHTML = "";
@@ -195,7 +193,7 @@ function hideFpageBtn(ocultar) {
   }
   
   function getFormatStrong(titulo, valor){
-    const aSpan = document.createElement("span");
+  const aSpan = document.createElement("span");
   aSpan.classList.add("a-span");
   const sStrong = document.createElement("span");
   sStrong.classList.add("strong");
