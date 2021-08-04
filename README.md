@@ -2,9 +2,10 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Historias de usuario](##2-Historias de usuario.)
-* 
+* [1. Preámbulo](#1-Preámbulo)
+* [2. Historias de usuario](#2-Historias de usuario)
+* [3. Producto Final](#3-Producto Final)
+* [4. Check-list](#4-Check-list)
 
 ***
 
@@ -18,7 +19,7 @@ El objetivo principal de esta página es mostrar la informacion principal sobre 
 
 ## 2. Historias de usuario.
 
-### Historia de usuario 1
+**Historia de usuario 1**
 
 - Yo como usuario de la aplicación DL-Olimpiadas
 Quiero ver la información exhibida por pais
@@ -34,7 +35,7 @@ Para saber que atletas representarón a dicho pais en los JO-Río 2016.
 -Realizar pruebas con 3 usuarios e incluir el feedback.
 -Tener un diseño responsive
 
-### Primer prototipo de baja y alta fidelidad.
+** Primer prototipo de baja y alta fidelidad.**
 
 ![prototipo de Baja fidelidad](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/prototipo%20de%20baja%20fidelidad.jpg)
 
@@ -47,7 +48,7 @@ Colocar la barra de select en la parte de arriba, utilizar otra gama de colores 
 
 En cuanto al prototipo de baja fidelidad se recibio el feed back por parte de compañeras y otros usuarios de mostrar la informacion en tarjetas.
 
-### Historia de usuario 2
+** Historia de usuario 2 **
 
 - Yo como usuario de la aplicación DL-Olimpiadas
 Quiero ver la información exhibida por deporte, genero y medalla.
@@ -78,15 +79,19 @@ En cuanto al prototipo de baja fidelidad se recibio el feed back por parte de co
 - Tener la forma de selecionar desde el primer momento una opcion de filtrado.
 - Colocar un botón de reset.
 
-### Producto final
+### 3. Producto final
 
 **Pantalla incial**
 ![pantalla inicial](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/productofinal.PNG)
+
+** Tarjetas (vista frontal y trasera*
 ![tarjeta frente](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/tarjetaFrente.PNG)
 ![tarjeta atras](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/tarjetaAtras.PNG)
+
+**Pantalla Sin Resultados**
 ![pantalla sin resultados](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/pantallaSinResultado.PNG)
 
-### 3. Check-list
+### 4. Check-list
 
 * [x] Incluye _Definición del producto_ clara e informativa.
 * [x] Incluye historias de usuario.
