@@ -153,42 +153,27 @@ function obtenerElementoAtleta(atleta) {
   const aName = document.createElement("p");
   aName.innerHTML = atleta.name;
   aName.classList.add("name_athlet");
-  const aNameBack = document.createElement("p");
+  const aNameBack = document.createElement("div");
   aNameBack.innerHTML = atleta.name;
-  aNameBack.classList.add("name_athlet");
+  aNameBack.classList.add("nameBack");
   const aSport = document.createElement("p");
   aSport.innerHTML = "Deporte: " + atleta.sport;
   aSport.classList.add("sport");
   const aTeam = document.createElement("p");
   aTeam.innerHTML = "Pais: " + atleta.team + " (" + atleta.noc + ")";
   aTeam.classList.add("team_athlet");
-  const aEvent = document.createElement("p");
-  aEvent.innerHTML = "Evento: " + atleta.event;
-  aEvent.classList.add("dato");
-  /*const aMedal = document.createElement("div");
-  aMedal.innerHTML = "Medalla: " + atleta.medal;
-  aMedal.classList.add("medall");*/
-  const aAge = document.createElement("p");
-  aAge.innerHTML = "Edad: " + atleta.age + " años";
-  aAge.classList.add("dato");
-  const aWeight = document.createElement("p");
-  aWeight.innerHTML = "Peso: " + atleta.weight + " kg";
-  aWeight.classList.add("dato");
-  const aHeight = document.createElement("p");
-  aHeight.innerHTML = "Estatura: " + atleta.height + " cm";
-  aHeight.classList.add("dato");
+  
   div.appendChild(aName);
   div.appendChild(aTeam);
   div.appendChild(aSport);
-  
    
   const divAtras = document.createElement("div");
   divAtras.classList.add("atras");
   divAtras.appendChild(aNameBack);
-  divAtras.appendChild(aEvent);
-  divAtras.appendChild(aAge);
-  divAtras.appendChild(aWeight);
-  divAtras.appendChild(aHeight);
+  divAtras.appendChild(getFormatStrong("Evento: ", atleta.event));
+  divAtras.appendChild(getFormatStrong("Edad: ", atleta.age + " años"));
+  divAtras.appendChild(getFormatStrong("Peso: ", atleta.weight + " kg"));
+  divAtras.appendChild(getFormatStrong("Estatura: ", atleta.height + " cm"));
 
   divInner.appendChild(div);
   divInner.appendChild(divAtras);
@@ -209,3 +194,13 @@ function hideFpageBtn(ocultar) {
     ocultarPaginacion.hidden = !ocultar;
   }
   
+  function getFormatStrong(titulo, valor){
+    const aSpan = document.createElement("span");
+  aSpan.classList.add("a-span");
+  const sStrong = document.createElement("span");
+  sStrong.classList.add("strong");
+  aSpan.innerHTML = titulo;
+  sStrong.innerHTML=  valor;
+  aSpan.appendChild(sStrong);
+  return aSpan;
+  }
