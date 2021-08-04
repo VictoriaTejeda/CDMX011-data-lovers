@@ -3,7 +3,7 @@
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Historias de usuario](# 2-Historias de usuario.)
+* [2. Historias de usuario](##2-Historias de usuario.)
 * 
 
 ***
@@ -59,7 +59,7 @@ Para saber que atletas participarón en dicho deporte en los JO-Río 2016.
 - El usuario puede realizar múltiples filtros y si la búsqueda no tiene resultados le aparecerá un mensaje de no resultados.
 - Que tenga un diseño responsive
 
-Definición de terminado:
+**Definición de terminado:**
 - Permite ordenar data por uno o más campos (país, deporte ,medalla, genero.).
 - Permite filtrar data en base a una condición
 - Subir las actualizaciones a la rama en GitHub
@@ -73,23 +73,30 @@ En cuanto al prototipo de baja fidelidad se recibio el feed back por parte de co
 - Cambiar los colores del la barra de select ya que no daba la impresion de ser una barra de filtrado, mostrar la infomacion más relevante en la tarjeta para no perder la jerarquia de la importancia de los datos que el usuario quiere ver.
 - Poder seleccionar varios filtros a la vez.
 - Realizar los test unitarios. 
-- Mostar una imagen de no resultados acorde con el tema.
+- Mostar una imagen de no resultados acorde con el mensaje obtenido (Sin resultados).
 - Mostrar una pagina de inicio con una imagen referente al tema.
 - Tener la forma de selecionar desde el primer momento una opcion de filtrado.
 - Colocar un botón de reset.
 
+### Producto final
+
+**Pantalla incial**
+![pantalla inicial](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/productofinal.PNG)
+![tarjeta frente](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/tarjetaFrente.PNG)
+![tarjeta atras](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/tarjetaAtras.PNG)
+![pantalla sin resultados](https://github.com/VictoriaTejeda/CDMX011-data-lovers/blob/master/src/images/pantallaSinResultado.PNG)
+
 ### 3. Check-list
 
- [ ] Incluye _Definición del producto_ clara e informativa.
-* [ ] Incluye historias de usuario.
-* [ ] Incluye _sketch_ de la solución.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
+* [x] Incluye _Definición del producto_ clara e informativa.
+* [x] Incluye historias de usuario.
+* [x] Incluye _sketch_ de la solución.
+* [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+* [x] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
+* [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [x] UI: Permite ordenar data por uno o más campos.
+* [x] UI: Permite filtrar data en base a una condición.
+* [x] UI: Es _responsive_.
 
 
-- 
